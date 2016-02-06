@@ -1,0 +1,89 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: 'Open Sans', sans-serif;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+
+	/*outline: 1px dashed green;*/
+}
+body {
+	margin: 20px;
+}
+h1 {
+	font-weight: bolder;
+}
+form {
+	width: 150px;
+	margin: 30px 0 0 30px;
+	display: inline-block;
+}
+input {
+	border: 1px solid #999999;
+	width: 150px;
+	padding: 1px;
+	margin-bottom: 30px;
+	display: block;
+	box-shadow: 2px 2px 2px #666666;
+}
+#name {
+	border: 1px solid #999999;
+	margin-top: 60px;
+	width: 150px;
+}
+#check {
+	background-color: #66CCFF;
+	color: #FFFFFF;
+	padding: 2px;
+	font-weight: bolder;
+}
+#check:hover{
+	box-shadow: 1px 1px 1px #4C4C4C;
+	background-color: #000080;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+#error {
+	color: red;
+	display: inline-block;
+	margin-left: 30px;
+}
+#alert {
+	position: fixed;
+	left: 100px;
+	top: 100px;
+	width: 299px;
+	height: 150px;
+	border: 1px solid #808080;
+	background-color: #FFFFFF;
+	padding: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+#alert h2 {
+	text-align: center;
+	font-weight: bolder;
+}
+#alert button {
+	position: absolute;
+	bottom: 0;
+	margin: 0 30px 10px 30px;
+	width: 239px;
+	border: 1px solid #666666;
+	background-color: #FFFFFF;
+	padding: 10px;
+	font-weight: bolder;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+#alert button:hover {
+	background-color: #999999;
+	color: #FFFFFF;
+	cursor: pointer;
+}
