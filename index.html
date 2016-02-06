@@ -12,7 +12,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	</head>
 	<body>
-		<h1>Welcome to the Codingdojo plan-a-Cruise!</h1>
+		<h1>Welcome to Plan-A-Trip!</h1>
 
 		<form>
 			<input type="text" name="from" id="from" class="date" placeholder="From">
@@ -20,7 +20,13 @@
 			<input type="text" name="name" id="name" placeholder="Name">
 			<input type="submit" value="Check dates!" id="check">
 		</form>
-		<p id="errorN">Your field can't be blank!</p>
+
+		<div id="errorMessage">
+			<p class="error" class="dates" id="errorF">Your 'From' date can't be blank!</p>
+			<p class="error" class="dates" id="errorT">Your 'To' date can't be blank!</p>
+			<p class="error" id="errorN">Your Name can't be blank!</p>
+			<p class="error" id="invalidDate">Your 'To' date cannot be before your 'From' date</p>
+		</div>
 
 		<div id="alert">
 			<h2>Alert</h2>

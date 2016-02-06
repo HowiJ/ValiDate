@@ -25,15 +25,14 @@ form {
 input {
 	border: 1px solid #999999;
 	width: 150px;
-	padding: 1px;
+	padding: 1px 1px 1px 5px;
 	margin-bottom: 30px;
 	display: block;
 	box-shadow: 2px 2px 2px #666666;
 }
 #name {
-	border: 1px solid #999999;
 	margin-top: 60px;
-	width: 150px;
+
 }
 #check {
 	background-color: #66CCFF;
@@ -47,10 +46,18 @@ input {
 	color: #FFFFFF;
 	cursor: pointer;
 }
-#error {
+#errorMessage {
 	color: red;
 	display: inline-block;
 	margin-left: 30px;
+}
+#errorMessage p {
+	color: inherit;
+	display: block;
+	margin-bottom: 10px;
+}
+.err {
+	border: 1px solid red;
 }
 #alert {
 	position: fixed;
@@ -68,6 +75,9 @@ input {
 #alert h2 {
 	text-align: center;
 	font-weight: bolder;
+}
+#alert div {
+	margin: 20px;
 }
 #alert button {
 	position: absolute;
