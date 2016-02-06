@@ -3,14 +3,9 @@ $( document ).ready( function() {
 	$("#alert").hide();
 	$(".date").datepicker();
 
-	var message = "Thanks "
+	var message = ""
 
-	//Clicking Ok hides alert
-	$("button").click( function() {
-		$("#alert").hide();
-	})
-
-	//
+	//Confirmation Button (Main)
 	$("#check").click( function() {
 		if ( !$("#from").val() || !$("#to").val() || !$("#name").val() ) {
 			checkBlanks();
@@ -23,6 +18,11 @@ $( document ).ready( function() {
 		}
 
 		return false;
+	})
+
+	//Clicking Ok hides alert
+	$("button").click( function() {
+		$("#alert").hide();
 	})
 
 	//NecessaryHides() just to keep it clean.
